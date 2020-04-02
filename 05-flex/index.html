@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .father {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            /* 수직 */
+            align-items: flex-start;
+            /* 수평 */
+            /* flex-start/ flex-end / space-between / space-around */
+            flex-direction: row-reverse;
+            /* default값은 row , column이라고 설정하면 align-item이 수직, justifiy-item이 수평이 된다*/
+            flex-wrap: nowrap;
+            /*wrap-reverse도 가능*/
+        }
+
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+
+</html>
