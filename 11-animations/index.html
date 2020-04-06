@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: 5s scaleAndRotateSquare infinite ease-in-out;
+        }
+
+        @keyframes scaleAndRotateSquare {
+            0% {
+                transform: none;
+                color: goldenrod;
+            }
+
+            50% {
+                transform: rotate(1turn) scale(.5, .5);
+                color: white
+            }
+
+            100% {
+                transform: none;
+                color: goldenrod;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">HYE WON</div>
+</body>
+
+</html>
